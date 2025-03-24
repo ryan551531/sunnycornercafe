@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #4b2e1e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+  position: relative;
+}
+
+header {
+  height: 80px; /* set a fixed height */
+  overflow: hidden; /* prevent tall logo from stretching it */
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+}
+.site-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.order-btn {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('../media/hero.jpg') center/cover no-repeat;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background: #f4a261;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.about, .menu, main {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fefae0;
+}
+
+.about img, main img {
+  margin-top: 20px;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.item {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+footer {
+  background: #4b2e1e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
