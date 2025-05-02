@@ -76,7 +76,7 @@ nav a {
 
 .hero {
   background: url('../media/hero.jpg') center/cover no-repeat;
-  height: 80vh;
+  height: 20vh; /*akein: changed to 20vh for better visuals*/
   color: white;
   display: flex;
   flex-direction: column;
@@ -147,3 +147,12 @@ footer {
   margin-top: 40px;
 }
 
+#image1 {
+  width: 0 auto;
+  height: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
