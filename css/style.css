@@ -111,6 +111,12 @@ nav a {
   background-color: #fefae0;
 }
 
+.about-pv {
+  padding: 60px px;
+  text-align: center;
+  background-color:none;
+}
+
 .about img, main img {
   margin-top: 20px;
   width: 60%;
@@ -193,11 +199,36 @@ footer {
 }
 
 #image1 {
-  width: 0 auto;
-  height: 0 auto;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  height: auto;
+  margin: 20px auto;
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-items { /*for featured menu on home page*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.item {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+ .menu-items :hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+ }
+
+.item img {
+  width: 100%;
+  border-radius: 6px;
 }
