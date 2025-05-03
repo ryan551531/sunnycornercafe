@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fffdf6;
+  background-color: #ec8f24;
   color: #333;
   line-height: 1.6;
 }
@@ -26,7 +26,7 @@ header {
 }
 
 header {
-  height: 80px; /* set a fixed height */
+  height: 140px; /* set a fixed height */ /*akein: adjusted to fit in slogan*/
   overflow: hidden; /* prevent tall logo from stretching it */
 }
 
@@ -48,6 +48,7 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
+  text-align: center; /*akein: added to "center sunny corner cafe"*/
 }
 
 nav {
@@ -190,3 +191,4 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
