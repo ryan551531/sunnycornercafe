@@ -5,10 +5,11 @@
 }
 
 :root {
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define the box-shadow variable */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
-body {
+
+.homepage--index {
   font-family: 'Segoe UI', sans-serif;
   background-color: #ec8f24;
   color: #333;
@@ -18,7 +19,7 @@ body {
 header {
   background: #4b2e1e;
   color: white;
-  padding: 15px 30px;
+  padding: 75px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +36,7 @@ header {
 }
 
 .logo img {
-  height: 180px;
+  height: 250px;
   width: auto;
   object-fit: contain;
 }
@@ -183,21 +184,31 @@ img {
 /* Menu Item Price */
 
 #Food-lover {
-  background: #f4f4f4;
-  padding: 30rem 0;
+  padding: 60px 20px;
   text-align: center;
+  background: url('../media/56f3179f20ee23faa3bbf2ae7012ce69.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .main-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #000;
+  text-align: center;
+  font-weight: bold;
 }
 
 .main-heading-p {
   font-size: 1.2rem;
   color: #000;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .btn-container {
@@ -270,7 +281,12 @@ img {
   margin: 10px 0;
 }
 
-/* Menu Section */
+.img-cards .description p {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Menu Main Index Section */
 .menu {
   padding: 60px 20px;
   text-align: center;
@@ -332,10 +348,10 @@ img {
 
 /* Footer */
 footer {
-  background: var(--primary-color);
+  background: #e68a00;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   margin-top: 40px;
 }
 
