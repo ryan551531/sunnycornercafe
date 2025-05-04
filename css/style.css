@@ -24,16 +24,10 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   height: 80px;
   position: relative;
 }
-
-header {
-  height: 140px; /* set a fixed height */ /*akein: adjusted to fit in slogan*/
-  overflow: hidden; /* prevent tall logo from stretching it */
-}
-
 
 .logo {
   display: flex;
@@ -45,21 +39,11 @@ header {
   width: auto;
   object-fit: contain;
 }
-.site-name {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  text-align: center; /*akein: added to "center sunny corner cafe"*/
-}
 
 nav {
   display: flex;
   align-items: center;
 }
-
 
 nav a {
   color: white;
@@ -68,19 +52,25 @@ nav a {
   font-weight: 500;
 }
 
-.order-btn {
-  background-color: #f4a261;
-  color: white;
+.order-btn {  
+  color: #e68a00;
   border: none;
   padding: 8px 14px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background-color: #FFA500;
+  color: white;
 }
 
 .hero {
   background: url('../media/hero.jpg') center/cover no-repeat;
-  height: 20vh; /*akein: changed to 20vh for better visuals*/
+  height: 60vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -91,15 +81,47 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin: 20px 0;
+.site-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center; /*akein: added to "center sunny corner cafe"*/
+}
+
+.hero h1 span {
+  color: var(--secondary-color);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 10px 0;
   max-width: 600px;
+  line-height: 1.8;
 }
 
+.hero-subtitle p {
+  font-size: 3.5rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* Hero Button */
 .hero-btn {
   padding: 10px 20px;
   background: #f4a261;
@@ -107,33 +129,73 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
 }
 
-.about, .menu, main {
-  padding: 60px 20px;
+.hero-btn:hover {
+  background: #e76f51;
+  color: white;
+}
+
+/* General Image Styling */
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.images img {
+  max-width: 0%; /* Adjust width for responsiveness */
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+/* About Main Section */
+.about-pv {
+  padding: 60px px;
   text-align: center;
   background-color: #fefae0;
 }
 
-.about-pv {
-  padding: 60px px;
-  text-align: center;
-  background-color:none;
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.about img, main img {
-  margin-top: 20px;
+.about-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.about-image img {
   width: 60%;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: var(--box-shadow);
+  margin: 20px auto;
+  display: block;
 }
 
-
+/* Menu Item Price */
 
 #Food-lover {
   background: #f4f4f4;
   padding: 30rem 0;
   text-align: center;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.main-heading-p {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .btn-container {
@@ -165,70 +227,60 @@ nav a {
 
 .menus-item-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-  gap: 20px; /* Add spacing between the items */
-  justify-items: center; /* Center items horizontally */
-}
-
-.menu-item-container .img-cards{
-  border: 1px solid #4b2e1e;
-  box-shadow: var(--box-shadow);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  justify-items: center;
+  padding: 20px; 
 }
 
 .img-cards {
-  border: 1px solid #4b2e1e;
-  box-shadow: var(--box-shadow);
-  width: 100%; /* Ensure cards take up full width of their grid cell */
-  max-width: 300px; /* Optional: Limit the maximum width */
-  text-align: center;
+  border: 1px solid #4b2e1e; 
+  box-shadow: var(--box-shadow); 
+  width: 100%; 
+  max-width: 300px; 
+  text-align: center; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  background-color: white; 
 }
 
 .img-cards img {
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    max-width: 350px;
-    margin: 0 auto;
-    margin: 0 auto;
-    cursor: pointer;
-    flex: 1 1 calc(33% - 20px);
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid #ddd;
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px 10px 0 0; 
+  transition: transform 0.3s ease-in-out; 
 }
 
-.img-cards p {
-  font-size: 1.2rem;
-  color: #4b2e1e;
-  text-align: left;
-  margin: 0.5rem 0;
-}
 .img-cards img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); 
 }
 
+.img-cards .price {
+  font-size: 1rem; 
+  color: #FFA500; 
+  margin: 10px 0;
+  font-weight: 600;
+}
 
-footer {
-  background: #4b2e1e;
-  color: white;
+.img-cards .description {
+  font-size: 0.9rem; 
+  color: #333; 
+  margin: 10px 0;
+}
+
+/* Menu Section */
+.menu {
+  padding: 60px 20px;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  background-color: #fefae0;
 }
 
-#image1 {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 20px auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.menu h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.menu-items { /*for featured menu on home page*/
+.menu-items {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -241,14 +293,55 @@ footer {
   padding: 20px;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
- .menu-items :hover {
+
+.item:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
- }
+}
 
 .item img {
   width: 100%;
   border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer .footer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer .footer-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
