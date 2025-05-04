@@ -1,33 +1,99 @@
+<!--Akein Bantin-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Sunny Corner Cafe</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Corner Cafe</title>  
+  <link rel="stylesheet" href="css/style.css" /> 
   <link rel="icon" href="icons/favicon.ico" />
 </head>
+
 <body>
     <header>
-        <div class="logo">
-          <img src="media/logo.png" alt="Logo" />
-        </div>
-        <div class="site-name">Sunny Corner Cafe</div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="contact.html">Contact</a>
-          <a href="order.html"><button class="order-btn">Order Online</button></a>
-        </nav>
-      </header>
+      <div class="logo"> <!--akein: made the log into a link that goes back to homepage-->
+        <a href="index.html">
+            <img src="media/logo.png" alt="Sunny Corner Cafe Logo"/>
+        </a>
+      </div>     
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="order.html"><button class="order-btn">Order Online</button></a>
+          </nav>          
+    </header>
+
+    <section class="main-text">
+          <h2 class="site-name">Welcome to Sunny Corner Cafe</h2>
+          <p class="hero-subtitle"><br><br> Tropical getaway in the heart of Kingston 
+          <br>Come enjoy the finest coffee, calm vibes, and cozy conversations at Sunny Corner Cafe.</p>
+    </section>
+
+    <div class="main-images">
+      <img id="image1" src="media/cafe-bar.png" alt="Interior of the cafe" />
+    </div>
+    <br>
+    <br>
+    <section class="about-pv">
+      <div class="about-text">
+        <h1>Who We Are...</h1>
+        <p>
+          Sunny Corner Cafe is a tropical oasis in the heart of Kingston, Jamaica. We offer a unique blend of local and
+          international flavors, with a focus on fresh ingredients and sustainable practices. Our cozy atmosphere is
+          perfect for relaxing with friends or enjoying a quiet moment alone.
+        </p>
+      </div>
+  
+      <div class="about-image">
+        <img src="https://media.istockphoto.com/id/1354172491/photo/cheerful-waiter-at-work.jpg?s=612x612&w=0&k=20&c=iT2zf0L_wRpce-foEfVsuK-Aqtx1dpsljqqv1AjmxwA=" alt="Cafe worker" />
+      </div>
+  
+      <a href="about.html" class="hero-btn">About Us</a>
+    </section>
+  
+    <section class="menu">
+      <div class="menu-text">
+        <h1>Our Menu</h1>
+        <p">
+          Our menu features a variety of delicious options, from traditional Jamaican dishes to international favorites.
+          We pride ourselves on using fresh, locally sourced ingredients to create meals that are both tasty and healthy.
+        </p>
+      </div>
       
-
-  <section class="hero">
-    <h1>Welcome!</h1>
-    <p>Come enjoy the finest coffee, calm vibes, and cozy conversations at Sunny Corner Cafe.</p>
-    <a href="order.html" class="hero-btn">Book a Table</a>
-  </section>
-
-  <footer>&copy; 2025 Sunny Corner Cafe</footer>
-</body>
-</html>
+      <br>
+      <h2 class="featured-menu">Featured Menu</h2>
+      <div class="menu-items">
+        <div class="item">
+          <img src="media/dark-coffee.jpg" alt="Dark Coffee" />
+          <h3>Dark Coffee</h3>
+          <p>JMD $1500.00</p>
+        </div>
+        <div class="item">
+          <img src="media/latte.jpg" alt="Latte Macchiato" />
+          <h3>Latte Macchiato</h3>
+          <p>JMD $1420.00</p>
+        </div>
+        <div class="item">
+          <img src="media/beverage.jpg" alt="Laid back cocktail" />
+          <h3>Laid Back Cocktail</h3>
+          <p>JMD $1350.00</p>
+        </div>
+      </div>
+  
+      <a href="order.html" class="hero-btn">Book a Table</a>
+    </section>
+  
+    <footer>
+      <div class="footer-content">
+        <h2>Sunny Corner Cafe</h2>
+        <p>123 Sunny Street, Kingston, Jamaica</p>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      &copy; 2025 Sunny Corner Cafe
+    </footer>
+  </body>
+  
+  </html>

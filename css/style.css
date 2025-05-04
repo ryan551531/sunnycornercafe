@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define the box-shadow variable */
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fffdf6;
+  background-color: #ec8f24;
   color: #333;
   line-height: 1.6;
 }
@@ -20,16 +24,10 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   height: 80px;
   position: relative;
 }
-
-header {
-  height: 80px; /* set a fixed height */
-  overflow: hidden; /* prevent tall logo from stretching it */
-}
-
 
 .logo {
   display: flex;
@@ -41,20 +39,11 @@ header {
   width: auto;
   object-fit: contain;
 }
-.site-name {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-}
 
 nav {
   display: flex;
   align-items: center;
 }
-
 
 nav a {
   color: white;
@@ -63,19 +52,25 @@ nav a {
   font-weight: 500;
 }
 
-.order-btn {
-  background-color: #f4a261;
-  color: white;
+.order-btn {  
+  color: #e68a00;
   border: none;
   padding: 8px 14px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background-color: #FFA500;
+  color: white;
 }
 
 .hero {
   background: url('../media/hero.jpg') center/cover no-repeat;
-  height: 80vh;
+  height: 60vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -86,15 +81,47 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin: 20px 0;
+.site-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center; /*akein: added to "center sunny corner cafe"*/
+}
+
+.hero h1 span {
+  color: var(--secondary-color);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 10px 0;
   max-width: 600px;
+  line-height: 1.8;
 }
 
+.hero-subtitle p {
+  font-size: 3.5rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* Hero Button */
 .hero-btn {
   padding: 10px 20px;
   background: #f4a261;
@@ -102,19 +129,157 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
 }
 
-.about, .menu, main {
+.hero-btn:hover {
+  background: #e76f51;
+  color: white;
+}
+
+/* General Image Styling */
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.images img {
+  max-width: 0%; /* Adjust width for responsiveness */
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+/* About Main Section */
+.about-pv {
+  padding: 60px px;
+  text-align: center;
+  background-color: #fefae0;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-image img {
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin: 20px auto;
+  display: block;
+}
+
+/* Menu Item Price */
+
+#Food-lover {
+  background: #f4f4f4;
+  padding: 30rem 0;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.main-heading-p {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  margin: 20px;
+}
+
+.btn-category {
+  background: #4b2e1e;
+  color: #fffdf6;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #fffdf6;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-category:hover,.active {
+  background: #FFA500;
+  color: var(--secondary_color);
+  border: 1px solid var(--secondary_color);
+}
+
+.menus-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  justify-items: center;
+  padding: 20px; 
+}
+
+.img-cards {
+  border: 1px solid #4b2e1e; 
+  box-shadow: var(--box-shadow); 
+  width: 100%; 
+  max-width: 300px; 
+  text-align: center; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  background-color: white; 
+}
+
+.img-cards img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px 10px 0 0; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.img-cards img:hover {
+  transform: scale(1.05); 
+}
+
+.img-cards .price {
+  font-size: 1rem; 
+  color: #FFA500; 
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.img-cards .description {
+  font-size: 0.9rem; 
+  color: #333; 
+  margin: 10px 0;
+}
+
+/* Menu Section */
+.menu {
   padding: 60px 20px;
   text-align: center;
   background-color: #fefae0;
 }
 
-.about img, main img {
-  margin-top: 20px;
-  width: 60%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.menu h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .menu-items {
@@ -125,23 +290,71 @@ nav a {
   margin-top: 20px;
 }
 
+.featured-menu {
+  color: #000;
+}
+
+.menu-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+
+}
+
 .item {
   background: white;
   padding: 20px;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.05);
 }
 
 .item img {
   width: 100%;
   border-radius: 6px;
+  box-shadow: var(--box-shadow);
 }
 
+.item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
 footer {
-  background: #4b2e1e;
+  background: var(--primary-color);
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+footer .footer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer .footer-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
