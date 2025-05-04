@@ -358,3 +358,51 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* jashuel-background picture  */
+.about-heading {
+  background-image: url('../media/Sunny Corner Sunset.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  padding: 100px 20px; 
+  text-align: center; 
+  font-size: 2rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+/*jashuel-image collage for founder section*/
+.founders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.founder {
+  text-align: center;
+  width: 150px; 
+}
+
+.founder img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.founder p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; 
+}
+
+.main-about-us {
+  background-color: white;
+}
+
+.hau{
+  text-align:center;
+}
