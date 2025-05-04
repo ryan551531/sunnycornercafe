@@ -201,12 +201,13 @@ img {
   z-index: 1;
 }
 
-.main-heading {
+.menu-main-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #000;
   text-align: center;
   font-weight: bold;
+  font-family: 'Cafe Menu', cursive;
 }
 
 .main-heading-p {
@@ -259,7 +260,7 @@ img {
   text-align: center; 
   border-radius: 10px; 
   overflow: hidden; 
-  background-color: white; 
+  background-color: #72462e; 
 }
 
 .img-cards img {
@@ -274,14 +275,15 @@ img {
 }
 
 .img-cards .price {
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   color: #FFA500; 
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .img-cards .description {
-  font-size: 0.9rem; 
+  font-size: 1rem; 
   color: #333; 
   margin: 10px 0;
 }
@@ -289,6 +291,31 @@ img {
 .img-cards .description p {
   margin: 0; 
   padding: 0; 
+}
+
+/* Buttons for Menu Categories */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn-category {
+  background: var(--primary-color);
+  color: #f4a261;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-category:hover {
+  background: var(--secondary-color);
+  color: #;
 }
 
 /* Menu Main Index Section */
@@ -299,9 +326,9 @@ img {
 }
 
 .menu h1 {
-  font-size: 130px;
+  font-size: 3rem;
   margin-bottom: 20px;
-  font-family: Sunny Coast;
+  font-family: 'Sunny Coast', cursive;
   color: #ec8f24;
   text-shadow: #b2ad8e 5px 10px 10px ;/*akein: added to "font shawdow"*/
 }
@@ -313,6 +340,17 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 20px;
+}
+
+.menu-item-container {
+  margin-bottom: 60px;
+}
+
+.menus-item-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .featured-menu {
