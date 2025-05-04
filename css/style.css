@@ -333,6 +333,7 @@ img {
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  box-shadow: var(--box-shadow);
 }
 
 .item:hover {
