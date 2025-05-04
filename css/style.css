@@ -208,6 +208,11 @@ img {
   text-align: center;
   font-weight: bold;
   font-family: 'Cafe Menu', cursive;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+  font-family: 'Sunny Coast', cursive;
+  color: #ec8f24;
+  text-shadow: #b2ad8e 5px 10px 10px;/*akein: added to "font shawdow"*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 }
 
 .main-heading-p {
@@ -255,7 +260,7 @@ img {
 .img-cards {
   border: 1px solid #4b2e1e; 
   box-shadow: var(--box-shadow); 
-  width: 100%; 
+  width: auto; 
   max-width: 300px; 
   text-align: center; 
   border-radius: 10px; 
@@ -303,19 +308,38 @@ img {
 
 .btn-category {
   background: var(--primary-color);
-  color: #f4a261;
+  color: #76450d;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+  font-family: 'Sunny Coast', cursive;
+  color: #ec8f24;
+  text-shadow: #b2ad8e 5px 10px 10px;
 }
 
 .btn-category:hover {
   background: var(--secondary-color);
-  color: #;
+  color: #e68a00;
+}
+
+.menu-name {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Cafe Menu', cursive;
+}
+.menu-name p {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Menu Main Index Section */
@@ -330,7 +354,7 @@ img {
   margin-bottom: 20px;
   font-family: 'Sunny Coast', cursive;
   color: #ec8f24;
-  text-shadow: #b2ad8e 5px 10px 10px ;/*akein: added to "font shawdow"*/
+  text-shadow: #b2ad8e 5px 10px 10px;/*akein: added to "font shawdow"*/
 }
 
 
@@ -361,7 +385,6 @@ img {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   color: #000;
-
 }
 
 .item {
