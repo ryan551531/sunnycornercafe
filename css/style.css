@@ -94,10 +94,10 @@ nav a {
 
 .site-name {
   font-family: Sunny Coast;
-  position: absolute;
+  position: flex;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 108px;
+  /*transform: translateX(-50%);*/
+  font-size: 80px;
   font-weight: bold;
   color: white;
   text-align: center; /*akein: added to "center sunny corner cafe"*/
@@ -716,4 +716,11 @@ footer a:hover {
   font-size: 14px;
   font-weight: bold;
   color: #333; 
+}
+
+.order{
+
+  text-align: center;
+  padding: 20px;
+  font-size: large;
 }
