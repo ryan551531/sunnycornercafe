@@ -12,30 +12,98 @@
           <img src="media/logo.png" alt="Logo"/>
       </a>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html"><button class="order-btn">Order Online</button></a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html"><button class="order-btn">Order Online</button></a>
+      </nav>
   </header>
 
   <main>
     <div class="container">
-      <h1 class="main-heading">CAFE MENU</h1>
+      <h1 class="menu-main-heading">CAFE MENU</h1>
       <p class="main-heading-p">Explore our delicious offerings!</p>
-      
+
       <div class="food-lover-container">
         <div class="btn-container">
-          <button type="button" class="btn-category active btn" id="all">All</button>
-          <button type="button" class="btn-category" id="breakfast">Breakfast</button>
-          <button type="button" class="btn-category" id="lunch">Lunch</button>
-          <button type="button" class="btn-category" id="dinner">Dinner</button>
-          <button type="button" class="btn-category" id="drinks">Drinks</button>
-          <button type="button" class="btn-category" id="desserts">Desserts</button>
+          <a href="#breakfast-section" class="btn-category">Breakfast</a>
+          <a href="#lunch-section" class="btn-category">Lunch</a>
+          <a href="#dinner-section" class="btn-category">Dinner</a>
+          <a href="#drinks-section" class="btn-category">Drinks</a>
+          <a href="#desserts-section" class="btn-category">Desserts</a>
         </div>
-        
+
+        <!-- Breakfast Section -->
+        <section id="breakfast-section" class="menus-item-container">
+          <h2 class="menu-name">Breakfast</h2>
+          <div class="img-cards">
+            <img src="media/pancakes-952756-1.jpg" alt="Pancakes" class="menu-img" />
+            <p class="price">Only $25 dollars</p>
+          </div>
+          <div class="img-cards">
+            <img src="media/ackee.jpg" alt="Ackee and Salt Fish" class="menu-img" />
+            <p class="price">Only $15 dollars</p>
+          </div>
+        </section>
+
+        <!-- Lunch Section -->
+        <section id="lunch-section" class="menus-item-container">
+          <h2 class="menu-name">Lunch</h2>
+          <div class="img-cards">
+            <img src="media/rice and peas.jpg" alt="Rice and Peas" class="menu-img" />
+            <p class="price">Only $30 dollars</p>
+          </div>
+          <div class="img-cards">
+            <img src="media/sandwich-142951-1.jpg" alt="Salad" class="menu-img" />
+            <p class="price">Only $20 dollars</p>
+          </div>
+        </section>
+
+        <!-- Dinner Section -->
+        <section id="dinner-section" class="menus-item-container">
+          <h2 class="menu-name">Dinner</h2>
+          <div class="img-cards">
+            <img src="media/mud-dock-cafe-lunch-dinner-202205-03.jpg" alt="Steak" class="menu-img" />
+            <p class="price">Only $50 dollars</p>
+          </div>
+          <div class="img-cards">
+            <img src="media/pasta.jpg" alt="Pasta" class="menu-img" />
+            <p class="price">Only $35 dollars</p>
+          </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section id="drinks-section" class="menus-item-container">
+          <h2 class="menu-name">Drinks</h2>
+          <div class="img-cards">
+            <img src="media/Drink and cocktail.jpg" alt="Drink and Cocktail" class="menu-img" />
+            <p class="price">Only $20 dollars</p>
+          </div>
+          <div class="img-cards">
+            <img src="media/Cocktails London-jpg.jpeg" alt="Cocktail" class="menu-img" />
+            <p class="price">Only $15 dollars</p>
+          </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section id="desserts-section" class="menus-item-container">
+          <h2 class="menu-name">Desserts</h2>
+          <div class="img-cards">
+            <img src="media/coffee.jpg" alt="Ice Cream" class="menu-img" />
+            <p class="price">Only $10 dollars</p>
+          </div>
+          <div class="img-cards">
+            <img src="media/desserts-for-coffee-shops-f466c395-1024w.jpg" alt="Cake" class="menu-img" />
+            <p class="price">Only $15 dollars</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+        <!-- All Dishes Section
         <div class="menus-item-container">
           <div class="img-cards">
             <img src="media/pancakes-952756-1.jpg" alt="Breakfast" class="menu-img" />
@@ -64,6 +132,7 @@
         </div>
       </div>
     </div>
+  -->
   </main>
   
   <footer>
@@ -74,5 +143,8 @@
     </div>
     &copy; 2025 Sunny Corner Cafe
   </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
