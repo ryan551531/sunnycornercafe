@@ -431,3 +431,53 @@ footer a:hover {
 .hau{
   text-align:center;
 }
+
+.founders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.founder img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*jashuel- animation effect transition*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main-about-us h2, .main-about-us p, .founders, .staff {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.staff-member {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.staff-member {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.staff-member img {
+  width: 50%;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
