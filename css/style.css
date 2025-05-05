@@ -23,7 +23,7 @@ header {
   background: #72462e;
   background-image: linear-gradient(to bottom, #72462e, #ec8f24);
   color: white;
-  padding: 75px 20px;
+  padding: 53px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +43,7 @@ header {
   height: 250px;
   width: auto;
   object-fit: contain;
+  margin-top: 50px;
 }
 
 nav {
@@ -429,9 +430,9 @@ img {
   text-align: center;
 }
 
-/* jashuel About Page Us Sections */
+/* jashuel About Us Page Sections */
 .about-section, .story-section, .vision-section, .founders-section, .staff-section, .cta-section {
-  padding: 40px 20px;
+  padding: 0px 0px;
   text-align: center;
 }
 
@@ -453,7 +454,7 @@ img {
   background-size: cover; 
   background-position: center; 
   color: white; 
-  padding: 100px 20px;
+  padding: 50px 20px;
   text-align: center; 
   font-size: 2.5rem; 
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
@@ -520,7 +521,7 @@ img {
   justify-content: center;
 }
 
-.staff-member {
+.staff-member .staff-section{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
@@ -539,6 +540,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .staff-member img:hover {
@@ -707,4 +709,11 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.staff-member p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; 
 }
