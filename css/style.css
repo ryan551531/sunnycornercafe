@@ -717,3 +717,10 @@ footer a:hover {
   font-weight: bold;
   color: #333; 
 }
+
+.order{
+
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+}
