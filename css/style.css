@@ -94,9 +94,9 @@ nav a {
 
 .site-name {
   font-family: Sunny Coast;
-  position: absolute;
+  position: flex;
   left: 50%;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
   font-size: 108px;
   font-weight: bold;
   color: white;
