@@ -134,10 +134,11 @@ nav a {
   background: #f4a261;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
-  border: none;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .hero-btn:hover {
@@ -170,14 +171,14 @@ img {
 
 .about-text h1 {
   font-family: Sunny Coast;
-  font-size: 120px;
+  font-size: 80px;
   margin-bottom: 20px;
   color:white;
   text-shadow: #76450d 5px 10px 10px ;/*akein: added to "font shawdow"*/
 }
 
 .about-text p {
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 20px;
   color:white;
 }
@@ -190,7 +191,88 @@ img {
   display: block;
 }
 
-/* Menu Item Price */
+/* Menu Main Index Section */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fefae0;
+}
+
+.menu h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Sunny Coast', cursive;
+  color: #ec8f24;
+  text-shadow: #b2ad8e 5px 10px 10px;/*akein: added to "font shawdow"*/
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.menu-item-container {
+  margin-bottom: 60px;
+}
+
+.menus-item-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+
+.featured-menu {
+  color: #000;
+}
+
+.item {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--box-shadow);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.item .price {
+  font-size: 1.2rem;
+  color: #FFA500;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/*Chevar Menu Item Price */
 
 #Food-lover {
   padding: 60px 20px;
@@ -303,7 +385,7 @@ img {
   padding: 0; 
 }
 
-/* Buttons for Menu Categories */
+/* Chevar Buttons for Menu Categories */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -347,79 +429,255 @@ img {
   text-align: center;
 }
 
-/* Menu Main Index Section */
-.menu {
-  padding: 60px 20px;
+/* jashuel About Page Us Sections */
+.about-section, .story-section, .vision-section, .founders-section, .staff-section, .cta-section {
+  padding: 40px 20px;
   text-align: center;
-  background-color: #fefae0;
 }
 
-.menu h1 {
-  font-size: 3rem;
+.about-section h2, .story-section h2, .vision-section h2, .founders-section h2, .staff-section h2, .explore-content h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #4b2e1e;
   font-family: 'Sunny Coast', cursive;
-  color: #ec8f24;
-  text-shadow: #b2ad8e 5px 10px 10px;/*akein: added to "font shawdow"*/
 }
 
+.about-section p, .story-section p, .vision-section p, .staff-section p, .founders-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000;
+}
 
-.menu-items {
+.about-heading {
+  background-image: url('../media/Sunny Corner Sunset.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  padding: 100px 20px;
+  text-align: center; 
+  font-size: 2.5rem; 
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+  font-family: 'Sunny Coast', cursive;
+  font-weight: bold;
+}
+
+.founders {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.menu-item-container {
-  margin-bottom: 60px;
+.founder {
+  text-align: center;
+  width: 200px;
+  max-width: 0 auto;
+  padding: 20px;
 }
 
-.menus-item-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
+.founder img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.founder img:hover {
+  transform: scale(1.1);
+}
+
+.founder p {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.featured-menu {
-  color: #000;
-}
-
-.menu-text {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  color: #000;
-}
-
-.item {
-  background: white;
-  padding: 20px;
-  width: 200px;
-  border-radius: 10px;
+.hau{
   text-align: center;
+  font-size: 1.5rem;
+  color: #4b2e1e;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main-about-us h2, .main-about-us p, .founders, .staff p {
+  animation: fadeIn 1s ease-in-out;
+  justify-content: center;
+}
+
+.staff-member {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+  flex-direction: block;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.staff-member img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  box-shadow: var(--box-shadow);
 }
 
-.item:hover {
-  transform: scale(1.05);
+.staff-member img:hover {
+  transform: scale(1.1); 
 }
 
-.item img {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: var(--box-shadow);
+.explore-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #fefae0;
 }
 
-.item h3 {
+.cta-btn {
+  padding: 12px 25px;
+  background: #4b2e1e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: #e76f51;
+}
+
+/* Chevar Contact Us Page*/
+.contact-page {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fefae0;
+  background-image: linear-gradient(to bottom, #fefae0, #ec8f24);
+  color: #4b2e1e;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
-.item p {
+.contact-form-section {
+  padding: 40px 20px;
+  background-color: #fffdf6;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b2e1e;
+}
+
+.contact-form label {
+  display: block;
   font-size: 1rem;
-  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4b2e1e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #e76f51;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fefae0;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b2e1e;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.map-section {
+  padding: 40px 20px;
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b2e1e;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -449,102 +707,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* jashuel-background picture  */
-.about-heading {
-  background-image: url('../media/Sunny Corner Sunset.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  color: white; 
-  padding: 100px 20px; 
-  text-align: center; 
-  font-size: 2rem; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-}
-
-/*jashuel-image collage for founder section*/
-.founders {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; 
-  justify-content: center; 
-  margin-top: 20px;
-}
-
-.founder {
-  text-align: center;
-  width: 150px; 
-}
-
-.founder img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.founder p {
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #333; 
-}
-
-.main-about-us {
-  background-color: white;
-}
-
-.hau{
-  text-align:center;
-}
-
-.founders {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  text-align: center;
-}
-.founder img {
-  width: 100%;
-  height: auto;
-  border-radius: 20%;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/*jashuel- animation effect transition*/
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.main-about-us h2, .main-about-us p, .founders, .staff {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.staff-member {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  text-align: center;
-  flex-direction: block;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px; 
-  justify-content: center; 
-  margin-top: 20px;
-}
-
-.staff-member img {
-  width: 150px;
-  height: auto;
-  border-radius: 20%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
