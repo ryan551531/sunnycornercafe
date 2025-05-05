@@ -94,14 +94,14 @@ nav a {
 
 .site-name {
   font-family: Sunny Coast;
-  position: absolute; /*akein: added to "position"*/
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-size: 108px;
   font-weight: bold;
   color: white;
   text-align: center; /*akein: added to "center sunny corner cafe"*/
-  text-shadow: #925319 5px 10px 10px;/*akein: added to "text shadow"*/
+  text-shadow: #925319 5px 10px 10px;/*akein: added to "font shadow"*/
 }
 
 .hero h1 span {
@@ -110,7 +110,6 @@ nav a {
 
 .hero-subtitle {
   font-size: 1.5rem;
-  margin-top: 200px;
   margin-bottom: 10px;
   font-style: italic;
   color: #fff;
