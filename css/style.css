@@ -508,6 +508,7 @@ footer a:hover {
 .founder img {
   width: 100%;
   height: auto;
+  border-radius: 20%;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -530,20 +531,19 @@ footer a:hover {
 
 .staff-member {
   display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+  flex-direction: block;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px; 
   justify-content: center; 
   margin-top: 20px;
 }
 
-.staff-member {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  text-align: center;
-}
 .staff-member img {
-  width: 50%;
+  width: 150px;
   height: auto;
   border-radius: 20%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
