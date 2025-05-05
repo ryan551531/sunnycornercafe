@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
@@ -212,7 +216,7 @@ img {
   margin-bottom: 20px;
   font-family: 'Sunny Coast', cursive;
   color: #ec8f24;
-  text-shadow: #b2ad8e 5px 10px 10px;/*akein: added to "font shawdow"*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+  text-shadow: #b2ad8e 5px 10px 10px;                
 }
 
 .main-heading-p {
@@ -265,7 +269,8 @@ img {
   text-align: center; 
   border-radius: 10px; 
   overflow: hidden; 
-  background-color: #72462e; 
+  background-color: #fffdf6;
+  margin: 0 auto 20px; 
 }
 
 .img-cards img {
