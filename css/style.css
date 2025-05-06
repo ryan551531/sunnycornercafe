@@ -461,6 +461,7 @@ main {
   margin-bottom: 20px;
   color: #ec8f24;
   font-family: 'Sunny Coast', cursive;
+  text-shadow: #b2ad8e 5px 10px 10px; 
 }
 
 .about-section p, .story-section p, .vision-section p, .staff-section p, .founders-section p {
@@ -481,7 +482,6 @@ main {
   margin-bottom: 40px;
   font-family: 'Sunny Coast', cursive;
   font-weight: bold;
-  text-shadow: #000 5px 10px 10px; /*akein: added to "font shadow"*/
 }
 
 .founders {
