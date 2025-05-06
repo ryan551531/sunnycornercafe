@@ -294,7 +294,7 @@ main {
 }
 
 .menu-main-heading {
-  font-size: 2.5rem;
+  font-size: 130px;
   margin-top: 50px;
   color: #000;
   text-align: center;
@@ -457,14 +457,14 @@ main {
 }
 
 .about-section h2, .story-section h2, .vision-section h2, .founders-section h2, .staff-section h2, .explore-content h2 {
-  font-size: 2.5rem;
+  font-size: 130px;
   margin-bottom: 20px;
-  color: #4b2e1e;
+  color: #ec8f24;
   font-family: 'Sunny Coast', cursive;
 }
 
 .about-section p, .story-section p, .vision-section p, .staff-section p, .founders-section p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.8;
   color: #000;
 }
@@ -476,11 +476,12 @@ main {
   color: white; 
   padding: 50px 20px;
   text-align: center; 
-  font-size: 2.5rem; 
+  font-size: 150px; 
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   margin-bottom: 40px;
   font-family: 'Sunny Coast', cursive;
   font-weight: bold;
+  text-shadow: #000 5px 10px 10px; /*akein: added to "font shadow"*/
 }
 
 .founders {
