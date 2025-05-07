@@ -353,6 +353,11 @@ main {
   padding: 20px; 
 }
 
+.menus-item-container a {
+  text-decoration: none;
+  color: inherit; /* keeps link color consistent with surrounding text */
+}
+
 .img-cards {
   border: 1px solid #4b2e1e; 
   box-shadow: var(--box-shadow); 
