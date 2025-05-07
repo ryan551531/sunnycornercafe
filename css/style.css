@@ -350,7 +350,12 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; 
   justify-items: center;
-  padding: 20px; 
+  padding: 20px;
+}
+
+.menus-item-container a {
+  text-decoration: none;
+  color: inherit; /* keeps link color consistent with surrounding text */
 }
 
 .img-cards {
@@ -406,7 +411,9 @@ main {
 }
 
 .btn-category {
-  background: var(--primary-color);
+  background: #f4a261;
+  color: #fffdf6;
+  text-decoration: none;
   color: #76450d;
   padding: 10px 20px;
   border-radius: 5px;
@@ -449,6 +456,11 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 /* jashuel About Us Page Sections */
 .about-section, .story-section, .vision-section, .founders-section, .staff-section, .cta-section {

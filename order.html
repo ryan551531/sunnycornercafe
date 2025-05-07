@@ -84,6 +84,52 @@
       margin-bottom: 20px;
       text-shadow: #ddbc9e 5px 10px 10px;/*akein: added to "font-size" to make it bigger*/
     } 
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+    }
+
+    table {
+      width: 60%;
+      margin : 0 auto;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ec8f24;
+      color: white;
+    }
+
+    .input-section {
+      margin-top: 30px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    .code-box {
+      margin: 0 auto;
+      padding: 15px;
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      display: none;
+      width: 300px;
+    }
+
   </style>
 </head>
 <body>
@@ -144,6 +190,52 @@
         </div>
       </div>
     </div>
+
+    <h2>Product Discounts</h2>
+
+  <table>
+    <tr>
+      <th>Menu Item</th>
+      <th>Original Price</th>
+      <th>Discounted Price</th>
+    </tr>
+    <tr>
+      <td>Dark Coffee</td>
+      <td>USD $11</td>
+      <td>USD $9</td>
+    </tr>
+    <tr>
+      <td>Latte Macchiato</td>
+      <td>USD $17</td>
+      <td>USD $14</td>
+    </tr>
+    <tr>
+      <td>Laid Back Cocktail</td>
+      <td>USD $15</td>
+      <td>USD $12</td>
+    </tr>
+  </table>
+
+  <div class="input-section">
+    <label for="codeInput">Enter secret word to unlock special discount:</label><br><br>
+    <input type="text" id="codeInput" placeholder="Enter keyword..." oninput="checkCode('sunny')" />
+    <div class="code-box" id="discountBox">
+      🎉 Congrats! Use code <strong>SUNNY500</strong> for $500 off!
+    </div>
+  </div>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById("codeInput").value.toLowerCase();
+      const box = document.getElementById("discountBox");
+      if (input === "sunny") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    }
+  </script>
+
   </main>
 
   <footer>
