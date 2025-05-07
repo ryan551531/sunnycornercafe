@@ -411,7 +411,7 @@ main {
 }
 
 .btn-category {
-  background: #f4a261;
+  background: #fefae0;
   color: #fffdf6;
   text-decoration: none;
   color: #76450d;
@@ -456,11 +456,6 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
-
-a {
-  text-decoration: none;
-}
-
 
 /* jashuel About Us Page Sections */
 .about-section, .story-section, .vision-section, .founders-section, .staff-section, .cta-section {
