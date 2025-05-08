@@ -97,7 +97,7 @@ nav a {
   position: flex;
   left: 50%;
   /*transform: translateX(-50%);*/
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   text-align: center; /*akein: added to "center sunny corner cafe"*/
@@ -350,7 +350,12 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; 
   justify-items: center;
-  padding: 20px; 
+  padding: 20px;
+}
+
+.menus-item-container a {
+  text-decoration: none;
+  color: inherit; /* keeps link color consistent with surrounding text */
 }
 
 .img-cards {
@@ -406,7 +411,9 @@ main {
 }
 
 .btn-category {
-  background: var(--primary-color);
+  background: #fefae0;
+  color: #fffdf6;
+  text-decoration: none;
   color: #76450d;
   padding: 10px 20px;
   border-radius: 5px;
