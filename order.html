@@ -3,94 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Order - Sunny Corner Cafe</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ec8f24;
-      color: #333;
-      line-height: 1.6;
-      background-image: linear-gradient(to bottom right, #ec8f24, #f9d89c);
-    }
-    .tagline {
-      background-color: #ec8f24;
-      color: white;
-      text-align: center;
-      font-style: italic;
-      font-size: 1.3rem;
-      padding: 20px 10px;
-    }
-
-    .tagline p {
-      color: white;
-    }
-    .order-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      align-items: start;
-    }
-    .product-column {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .product-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-    }
-    .product-card img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .product-card h3 {
-      margin: 10px 0 5px;
-    }
-    .product-card p {
-      font-size: 0.9em;
-      color: #666;
-    }
-    .form-column iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .order p {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      color: black;
-    }
-
-    .order h2 {
-      text-align: center;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 3rem;
-      color: #ec8f24;
-      margin-bottom: 20px;
-      text-shadow: #ddbc9e 5px 10px 10px;/*akein: added to "font-size" to make it bigger*/
-    } 
-  </style>
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="logo"> <!--akein: made the log into a link that goes back to homepage-->
       <a href="index.html">
-        <img src="media/logo.png" alt="Sunny Corner Cafe Logo" />
+          <img src="media/logo.png" alt="Logo"/>
       </a>
     </div>
     <nav>
@@ -98,52 +17,14 @@
       <a href="about.html">About</a>
       <a href="menu.html">Menu</a>
       <a href="contact.html">Contact</a>
+      <! -- <a href="order.html"><button class="order-btn">Order Online</button></a> -->
     </nav>
   </header>
 
-  <div class="tagline">
-    <p><em>Tropical getaway in the heart of Kingston</em></p>
-    <p><em>Come enjoy the finest coffee, calm vibes, and cozy conversations at Sunny Corner Cafe.</em></p>
-  </div>
-
   <main class="order">
     <h2>Order Now</h2>
-    <p>Select from our featured items and complete your order form.</p>
-
-    <div class="order-wrapper">
-      <!-- Left Products -->
-      <div class="product-column">
-        <div class="product-card">
-          <img src="media/latte.jpg" alt="Latte">
-          <h3>Classic Latte</h3>
-          <p>Rich espresso with steamed milk and a smooth finish.</p>
-        </div>
-        <div class="product-card">
-          <img src="media/dark-coffee.jpg" alt="Dark Roast">
-          <h3>Dark Roast</h3>
-          <p>Bold and aromatic, perfect for coffee lovers.</p>
-        </div>
-      </div>
-
-      <!-- Form in the middle -->
-      <div class="form-column">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMnFMWrT5IvQThXqRTXU5mtVhEruWh5pPS4YJa60tGX2pj8w/viewform?usp=header">Loading…</iframe>
-      </div>
-
-      <!-- Right Products -->
-      <div class="product-column">
-        <div class="product-card">
-          <img src="media/beverage.jpg" alt="Iced Mocha">
-          <h3>Iced Mocha</h3>
-          <p>Chilled coffee blended with chocolate and milk.</p>
-        </div>
-        <div class="product-card">
-          <img src="media/sunnyside.jpg" alt="Sunny Side Sandwich">
-          <h3>Sunny Side Sandwich</h3>
-          <p>Freshly made with eggs, cheese, and tomato on toast.</p>
-        </div>
-      </div>
-    </div>
+    <p>Use the form below to place your order:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9IbWaP8HHQWh3WcSvcQDzpfOtnVjMai-q7WDgsQxMKeyxXg/viewform"" width="100%" height="800" frameborder="0">Loading…</iframe>
   </main>
 
   <footer>
