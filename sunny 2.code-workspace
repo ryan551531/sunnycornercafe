@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../Website Project/Sunny-cornerside-cafe/sunny 2"
+		},
+		{
+			"name": "sunnycornercafe",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sunny 2",
+		"liveServer.settings.port": 5501
+	}
+}
