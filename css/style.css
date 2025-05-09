@@ -477,6 +477,25 @@ main {
   color: #000;
 }
 
+.about-section {
+  background-image: url('../media/about-bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Ensure text is readable */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Our Story Section */
+.story-section {
+  background-image: url('../media/beverage.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
 .about-heading {
   background-image: url('../media/Sunny Corner Sunset.jpg'); 
   background-size: cover; 
@@ -532,6 +551,10 @@ main {
   color: #4b2e1e;
   margin-bottom: 20px;
   font-family: 'Segoe UI', sans-serif;
+}
+
+.hau p {
+  background-image: url('../media/ackee.jpg');
 }
 
 @keyframes fadeIn {
