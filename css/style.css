@@ -598,6 +598,12 @@ main {
   background: #e76f51;
 }
 
+.sunnycbg {
+  background-image: url(../media/inside-sunnycorner.png);
+  background-size: cover;
+  background-position: center;
+}
+
 /*Contact Us Page*/
 .contact-page {
   padding: 20px;
