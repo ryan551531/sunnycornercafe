@@ -478,23 +478,51 @@ main {
 }
 
 .about-section {
-  background-image: url('../media/about-bg.jpg'); /* Replace with your image path */
-  background-size: cover;
+  background-image: url('../media/inside-sunnycorner.png'); 
+  background-size: cover ;
   background-position: center;
-  color: white; /* Ensure text is readable */
-  padding: 60px 20px;
+  background-color: rgba(250, 255, 255, 0.3);
+  color: white; 
+  padding: 0px 0px;
   text-align: center;
+  background-blend-mode: lighten;
+  margin-top: 20px;
 }
 
 /* Our Story Section */
 .story-section {
-  background-image: url('../media/beverage.jpg'); /* Replace with your image path */
+  background-image: url('../media/our-story.png'); 
   background-size: cover;
   background-position: center;
+  background-color: rgba(250, 255, 255, 0.3); 
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  background-blend-mode: lighten;
+}
+
+.vision-section{
+  background-image: url('../media/our-vision.png'); 
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(250, 255, 255, 0.3);
+  color: white;
+  padding: 50px 30px;
+  text-align: center;
+  background-blend-mode: lighten;
+  margin-top: 20px;
+}
+
+.staff-section{
+  background-image: url('../media/our-staff.png'); 
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(250, 255, 255, 0.5);
   color: white;
   padding: 60px 20px;
   text-align: center;
 }
+
 
 .about-heading {
   background-image: url('../media/Sunny Corner Sunset.jpg'); 
