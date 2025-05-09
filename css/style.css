@@ -599,7 +599,7 @@ main {
 }
 
 .sunnycbg {
-  background-image: url(../media/inside-sunnycorner.png);
+  background-image: url('../media/inside-sunnycorner.png');
   background-size: cover;
   background-position: center;
 }
